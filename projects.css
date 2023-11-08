@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    background-image: url(Img/fundo-projects.jpg);
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    
+   
+}
+
+header{
+    background-color: white;
+    filter: opacity(0.98);
+    height: 70px;
+}
+ul, .cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(font/Roboto-Light.ttf);
+
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(font/Poppins-Thin.ttf);
+}
+h3{
+    margin: 0px 20px;
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-size: 18px;
+}
+h3:hover{
+    border-bottom: 1px solid rgb(211, 135, 255);
+    background:  linear-gradient(to right, #ff0066 0%, #9999ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 850;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+h1{
+    font-size: 52px;
+    color: white;
+    font-family: 'Roboto';
+    text-align: center;
+    background: transparent;
+    backdrop-filter: blur(25px);
+    
+   
+    padding: 10px;
+    border-radius: 40px;
+    border: 6px solid white;
+    width: 390px;
+    height: 90px;
+    border-style: double;
+    margin: 15px;
+   
+
+}
+#cent-titulo{
+    animation: levitate 2s ease-in-out infinite;
+}
+#hr2, #hr1, #hr3, #hr4{
+    border-radius: 48px;
+    padding: 2px;
+    
+   
+}
+#hr1{
+  margin-right: 502px;
+}
+#hr3{
+    margin-right: 8px;
+    margin-bottom: 25px;
+}
+#hr2, #hr4{
+    background-color: #f28305;
+    border: none;
+    width: 300px;
+}
+#hr1, #hr3{
+    width: 240px;
+    background-color: #ff0066;
+    border: navajowhite;
+    
+}
+.ajuste{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+article{
+    display: flex;
+    justify-content: space-around;
+}
+
+@keyframes levitate {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+#PetShop, #Paraolímpiadas, #Formulario, #BancoJava, #Imobiliaria, #Formula-1{
+    background-color: rgba(255, 255, 255, 0.952);
+    width: 350px;
+    height: 190px;
+    padding: 10px;
+    text-align: justify;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-end;
+}
+#PetShop:hover{
+    transform: scale(1.02);
+    box-shadow: 2px 2px 15px #ff0066,
+                4px 4px 10px #F2B705,
+                6px 6px 20px #7933fc,
+                7px 7px 20px #ffffff;
+}
+#Paraolímpiadas:hover{
+    transform: scale(1.02);
+    box-shadow: 2px 2px 15px #ff0066,
+                4px 4px 10px #F2B705,
+                6px 6px 20px #7933fc,
+                7px 7px 20px #ffffff;
+}
+#Formulario:hover{
+    transform: scale(1.02);
+    box-shadow: 2px 2px 15px #ff0066,
+                4px 4px 10px #F2B705,
+                6px 6px 20px #7933fc,
+                7px 7px 20px #ffffff;
+}
+#BancoJava:hover{
+    transform: scale(1.02);
+    box-shadow: 2px 2px 15px #ff0066,
+                4px 4px 10px #F2B705,
+                6px 6px 20px #7933fc,
+                7px 7px 20px #ffffff;
+}
+#Imobiliaria:hover{
+    transform: scale(1.02);
+    box-shadow: 2px 2px 15px #ff0066,
+                4px 4px 10px #F2B705,
+                6px 6px 20px #7933fc,
+                7px 7px 20px #ffffff;
+}
+#Formula-1:hover{
+    transform: scale(1.02);
+    box-shadow: 2px 2px 15px #ff0066,
+                4px 4px 10px #F2B705,
+                6px 6px 20px #7933fc,
+                7px 7px 20px #ffffff;
+}

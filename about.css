@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    background-image: url(Img/fundo2.jpg);
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    
+   
+}
+
+header{
+    background-color: white;
+    filter: opacity(0.98);
+    height: 70px;
+}
+#descricao-caixa{
+    width: 750px;
+    text-align: justify;
+}
+
+ul, .cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(font/Roboto-Light.ttf);
+
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(font/Poppins-Thin.ttf);
+}
+h3{
+    margin: 0px 20px;
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-size: 18px;
+}
+h3:hover{
+    border-bottom: 1px solid rgb(211, 135, 255);
+    background:  linear-gradient(to right, #ff0066 0%, #9999ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 850;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.caixa-1, .caixa-2, .caixa-3, h1{
+    
+}
+
+h1{
+    text-align: center;
+    margin: auto;
+    margin-top: 170px;
+    margin-bottom: 170px;
+    font-size: 52px;
+    font-family: 'Roboto';
+    color: white;
+    width: 300px;
+    border: 1px solid white;
+    animation: glitch 1s infinite;
+    
+}
+@keyframes glitch {
+    0%, 20%, 30%, 50%, 60%, 80%, 100% {
+        transform: skew(0deg);
+    }
+    20% {
+        transform: skew(5deg);
+    }
+    40% {
+        transform: skew(-5deg);
+    }
+    70% {
+        transform: skew(2deg);
+    }
+    90% {
+        transform: skew(-2deg);
+    }
+}
+.caixa-1{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    font-family: 'Poppins';
+    padding: 70px;
+    
+    
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    margin: 0;
+}
+#subcaixa{
+    display: flex;
+    flex-direction: column;
+    width: 620px;
+    text-align: justify;
+}
+#minha-foto{
+    border-radius: 250px 250px 0px 0px;
+}
+#traco-perfil, #traco-perfil2{
+    padding: 2px;
+    border: none;
+}
+#traco-perfil{
+    background-color: #9999ff;
+    border-radius: 200px;
+}
+#traco-perfil2{
+    width: 85%;
+    background-color: aliceblue;
+}
+p{
+    font-weight: 600;
+    font-family: "Poppins";
+}
+.caixa-2{
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 7%;
+    
+}
+#subcaixa-2{
+    width: 650px;
+    font-family: 'Poppins';
+    text-align: justify;
+    
+}
+#Projects{
+    height: 100px;
+    width: 400px;
+    font-size: 22px;
+    font-family: 'Roboto';
+    outline: none;
+    border: none;
+    color: white;
+    background-image: linear-gradient(to right,#020024, #9999ff,aliceblue);
+    box-shadow: 2px 2px #3f3f7c,
+                4px 4px #9fc0f1;
+     transition: transform 0.3s ease, background-image 0.5s ease-in-out, box-shandow 0.5s ease-in-out;
+}
+#Projects:hover{
+    transform: translateX(50px);
+    background-image: linear-gradient(to right,#833ab4, #fd1d1d, #fcb045);
+    box-shadow: 4px 4px #ff5286,
+                8px 8px #734ba8;
+}
+hr{
+    padding: 6px;
+    border: none;
+    background-color: white;
+}
+.caixa-3{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    font-family: 'Poppins';
+    padding: 70px;
+    margin-bottom: 170px
+    
+}
+#subcaixa-3, #subcaixa-4{
+    width: 50%;
+    
+}
+hr{
+    background-color: rgba(138, 169, 255, 0.932);
+    padding: 1px;
+    margin: 8px;
+}
+footer{
+    background-color: #ffffffef;
+    height: 105px;
+    font-weight: 600;
+    
+    
+}
+.centralizacao{
+    
+    display: flex;
+    justify-content: space-evenly
+}
+#footer-center{
+    display: flex;
+}
+
+li{
+    display: flex;
+    margin: 0px 45px;
+    color: #8181e6;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.loading-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000; /* Cor de fundo da tela de loading */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    transition: opacity 1s; /* Adicione uma transição de 1 segundo para a opacidade */
+            opacity: 1;
+    display: flex;
+    flex-direction: column;
+    background-attachment: fixed;
+}
+
+.loading {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #b32ec5;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+
+.content {
+    display: none;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

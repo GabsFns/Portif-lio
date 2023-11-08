@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    background-image: url(Img/fundo2.jpg);
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+   
+}
+
+header{
+    background-color: white;
+    filter: opacity(0.98);
+    height: 70px;
+}
+#descricao-caixa{
+    width: 750px;
+    text-align: justify;
+}
+
+ul, .cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(font/Roboto-Light.ttf);
+
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(font/Poppins-Thin.ttf);
+}
+h3{
+    margin: 0px 20px;
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-size: 18px;
+}
+h3:hover{
+    border-bottom: 1px solid rgb(211, 135, 255);
+    background:  linear-gradient(to right, #ff0066 0%, #9999ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 850;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#descricao-caixa, .contato1, .contato2{
+    width: 400px;
+}
+.centralizacao{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    margin-top: 85px;
+    background-color: rgba(255, 255, 255, 0.979);
+    width: 95%;
+    height: 500px;
+    border-radius: 60px 60px 0px 0px;
+}
+#descricao-caixa{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.contato1, .contato2{
+  display: flex;
+  width: 380px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  align-items: center;
+   
+    
+}
+h1{
+    letter-spacing: 2px;
+    font-size: 48px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+}
+p{
+    
+    font-family: 'Poppins';
+    text-align: justify;
+}
+button{
+    margin: 10px 10px 10px 10px;
+}
+span{
+    margin: 12px 60px 12px 10px;
+}
+#Email{
+    margin: 10px 16px;
+}
+#cima-traco, #baixo-traco, #meio-traco, #alto-traco, #minimo-traco{
+border: none;
+padding: 3px;  
+border-radius: 20px;
+}
+#alto-traco{
+    background-color: #FEC107;
+    width: 75%;
+}
+#cima-traco{
+    background-color: #FF0068;
+    width: 85%;
+}
+#meio-traco{
+    width: 95%;
+    background-color: #8A078C;
+}
+#baixo-traco{
+    width: 85%;
+    background-color: #A6086F;
+}
+#minimo-traco{
+    width: 75%;
+    background-color: #006eff;
+}
+.formulario{
+    background-color: white;
+    width: 95%;
+    height: 450px;
+    
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 0px 0px 60px 60px;
+    margin-bottom: 200px;
+}
+#caixa-input{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-top: 65px;
+    
+}
+#text-area{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+input{
+    width: 520px;
+    height: 70px;
+    margin: 10px;
+    border: 1px solid #006eff;
+    box-shadow: 2px 2px #9999ff,
+    4px 4px #ffee00;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.2s ease-in;
+}
+input:focus{
+    border: 1px solid #ff0066;
+    box-shadow: 4px 4px #d072fc,
+    6px 6px #ffee00;
+}
+input[type=submit]{
+    width: 150px;
+    height: 45px;
+    background-color: #006eff;
+    border: 1px solid white;
+    box-shadow: 1px 1px rgb(174, 174, 255);
+    color: white;
+}
+textarea{
+    border-radius: 8px;
+    border: 1px solid #006eff;
+}
+label{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+button{
+    background: transparent;
+    border: none;
+}
+span{
+    font-family: 'Roboto';
+    font-weight: 600;
+}
+
+#insta{
+    color: #DE0478;
+}
+#ttw{
+    color: #05AFF2;
+}
+#linkdi{
+    color: #0073df;
+}
+#gmail{
+    color: #F2B705;
+}
+a{
+    display: flex;
+    align-items: center;
+}
+#img-ref{
+    animation: levitate 2s ease-in-out infinite;
+}
+@keyframes levitate {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+p{
+    font-weight: 600;
+}
+footer{
+    background-color: #ffffffef;
+    height: 105px;
+    font-weight: 600;
+    
+    
+}
+.ajuste-footer{
+    
+    display: flex;
+    justify-content: space-evenly
+}
+#footer-center{
+    display: flex;
+}
+
+li{
+    display: flex;
+    margin: 0px 45px;
+    color: #8181e6;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
