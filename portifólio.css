@@ -8,13 +8,15 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin: 0;
+    
    
 }
+
 
 header{
     background-color: white;
     filter: opacity(0.98);
-    height: 70px;
+    height: 80px;
 }
 #descricao-caixa{
     width: 750px;
@@ -103,6 +105,7 @@ h4{
 h2{
     font-family: 'Roboto';
     font-weight: 500;
+    margin: 0;
 }
 
 h3{
@@ -152,11 +155,13 @@ section{
     width: 900px;
 }
 #caixa-front, #caixa-backend, #caixa-database{
-    background-color: rgba(255, 255, 255, 0.952);
+    background-color: rgb(255, 255, 255);
     width: 350px;
     height: 230px;
     margin: 75px 15px 190px 15px;
     padding: 12px;
+    filter: opacity(0.85);
+    align-items: center;
 }
 article{
     display: flex;
@@ -184,6 +189,12 @@ article{
                 4px 4px 20px #7933fc,
                 5px 5px 20px #ffffff;
 }
+#front, #back, #databs{
+    width: 300px;
+    height: 130px;
+    margin: 0;
+}
+
 footer{
     background-color: #ffffffef;
     height: 105px;
@@ -322,5 +333,86 @@ a{
     100% {
         transform: translateX(0);
         opacity: 1;
+    }
+}
+#icone{
+    width: 250px;
+    height: 80px;
+}
+@media screen and (max-width: 550px) {
+    #icone{
+        width: 65px;
+        height: 20px;
+        margin: 0px 0px 10px 0px;
+    }
+    header{
+        
+        height: 34px;
+    }
+    h3{
+        margin: 1;
+        font-size: 11px;
+    }
+    nav{
+        margin: 0px 0px 8px 0px;
+    }
+    h1{
+        font-size: 22px;
+        letter-spacing: 0px;
+        margin-left: 6px;
+    }
+    .caixa-text{
+        margin: auto;
+        width: 340px;
+        
+        text-align: center;
+        align-items: center;
+        padding: 65px;
+    }
+    #descricao-caixa{
+        font-size: 12px;
+        width: 207px;
+        text-align: center;
+    }
+    .icon-contato{
+        justify-content: center;
+    }
+    #caixa-front, #caixa-backend, #caixa-database{
+        margin-bottom: 80px;
+
+    }
+    article{
+        display: flex;
+        flex-wrap: wrap;
+        
+        
+    }
+    footer{
+        font-size: 16px;
+        height: 100%;
+    }
+    .centralizacao{
+        align-items: center;
+
+    }
+    #footer-center{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+    .loading{
+        width: 15px;
+        height: 15px;
+    }
+    .welcome-message{
+        font-size: 22px;
+    }
+    #traco-cima{
+        width: 200px;
+    }
+    #traco-baixo{
+        width: 380px;
     }
 }
