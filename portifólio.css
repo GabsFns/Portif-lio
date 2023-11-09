@@ -339,22 +339,26 @@ a{
     width: 250px;
     height: 80px;
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 490px) {
     #icone{
-        width: 65px;
-        height: 20px;
-        margin: 0px 0px 10px 0px;
+        display: none;
     }
     header{
-        
-        height: 34px;
+        width: 100%;
+        text-align: center;
+
     }
     h3{
         margin: 1;
-        font-size: 11px;
+        font-size: 18px;
+        margin: 15px;
+       
     }
     nav{
-        margin: 0px 0px 8px 0px;
+        margin: 10px 0px 8px 0px;
+        text-align: center;
+        
+        
     }
     h1{
         font-size: 22px;
@@ -394,6 +398,12 @@ a{
     .centralizacao{
         align-items: center;
 
+    }
+    .cabecalho{
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
     }
     #footer-center{
         text-align: center;
